@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok Gift Profit Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h1>TikTok Gift Calculator</h1>
+        <div class="input-group">
+          <label for="giftType">Select Gift</label>
+          <select id="giftType">
+            <option value="rose">Rose (1 coin)</option>
+            <option value="heart">Heart (10 coins)</option>
+            <option value="diamond">Diamond (100 coins)</option>
+            <option value="universe">Universe (1000 coins)</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" min="1" value="1">
+        </div>
+        <button id="calculate">Calculate Profit</button>
+        <div class="result">
+          <div class="result-item">
+            <span>Total Coins:</span>
+            <span id="totalCoins">0</span>
+          </div>
+          <div class="result-item">
+            <span>Estimated Profit (USD):</span>
+            <span id="profit">$0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
